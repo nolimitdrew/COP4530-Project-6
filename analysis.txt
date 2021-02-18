@@ -1,0 +1,21 @@
+// HW6 - Analysis.txt
+// Andrew Stade
+// 12/4/2020
+
+-Reading the input set
+= For my program, input being read would be big O(N) as it is inside of a loop.
+
+-Storing the characters / words / numbers in your chosen containers, and setting their tracking values
+= Storing of input would be big O(log N) as the library std::map has an insert function which is logN.
+
+-Looking up the final tracking info on your character / word / number frequencies
+= The final tracking variable is nested inside of two loops making the it be big O(N^2).
+
+-Deciding on (and accessing for output) your "Top Ten" most frequent list for each case
+= Output of "Top Ten" would be also be big O(N^2) as it is also in those nested for loops.
+
+-Any other important algorithm/tasks you perform to complete the job
+= In Summary:
+= The main while loop of the program uses big O(N).
+= The use of insert in the std::map library has big O(log N)
+= Sorting of Top Ten in nested while loop has big O(N^2)
